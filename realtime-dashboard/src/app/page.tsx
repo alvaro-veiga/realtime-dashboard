@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { BadgeDollarSign, DollarSign, Percent, User } from "lucide-react";
+import ChartOvewview from "@/components/chart";
+import Sales from "@/components/sales";
 
 export default function Home() {
   return (
@@ -73,7 +75,8 @@ export default function Home() {
         </Card>
       </section>
       <section className="mt-4 flex flex-col md:flex-row gap-4">
-
+        <ChartOvewview/>
+        <Sales/>
       </section>
     </main>
   );
